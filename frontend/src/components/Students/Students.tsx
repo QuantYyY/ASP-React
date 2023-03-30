@@ -19,13 +19,14 @@ const Students: FC = () => {
 
     return (
         <>
-            {students.map((item) => (
-                <>
-                    <Card verticalSpace={"2xl"} horizontalSpace={"2xl"} shadow={true} className="api">
-                        <StudentApi key={item.id} {...item} />
-                    </Card>
-                </>
-            ))}
+                {students.map((item) => (
+                    <>
+                            <Card verticalSpace={"2xl"} horizontalSpace={"2xl"} shadow={true} className="api">
+                                <StudentApi key={item.id} {...item} />
+                            </Card>
+                    </>
+                ))}
+
 
         </>
     );
