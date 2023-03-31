@@ -1,0 +1,10 @@
+.api{
+    width: 300px;
+    margin-left: 1em;
+}
+
+.iconButton{
+    border: none; 
+    outline: none;
+    background-color: white;
+}

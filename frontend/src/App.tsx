@@ -1,15 +1,20 @@
 import './App.css';
 
-import Students from './components/Students';
+import StudentsList from './components/Students/ListStudents';
+import AddStudents from './components/Students/AddStudents';
+import Header from './components/Header';
 
+import { useAppSelector } from './hook';
 
 function App() {
 
-
+  const pageView = useAppSelector(state => state.pageView.pageView);
   return (
     <>
-      <h1>Students List</h1>
-      <Students/>
+      <Header/>
+      {pageView === 'listStudents' && <StudentsList /> }
+      {pageView === 'addStudents' && <AddStudents/> }
+      
     </>
   );
 }

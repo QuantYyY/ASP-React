@@ -1,5 +1,5 @@
 type Student = {
-    id?: number;
+    StudentId?: number;
     StudentName?: string;
     StudentContact?: string;
 };
